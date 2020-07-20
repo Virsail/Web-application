@@ -1,6 +1,7 @@
 alert("Hello welcome to my web app");
 prompt("Are you ready to get your Akan name?").toUpperCase(); // I'm going to type "yes!"
 
+//func to get date
 function fn(){
   var d = new Date();
   
@@ -10,6 +11,7 @@ function fn(){
   var year = parseInt(document.getElementById("year").value);
   
   
+  //else if statements
   if (day < 0 ||day > 31 ) {
       document.getElementsByClassName("dayerror");
       return false;
@@ -40,10 +42,12 @@ function fn(){
   
   
   
+  //array
   var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   
-  
+ 
+  //func to get Akan name accordingly 
   function getAkan() {
       var ismale = document.getElementById('male').checked;
       var isfemale = document.getElementById('female').checked;
