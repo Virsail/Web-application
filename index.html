@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./css/styles.css">
         <title>Akan Name Identifier</title>
     </head>
-    <body style="background-image: url(../Web-application/birthday.jpg);">
+    <body style="background-image: url(../Web-application/birthday.jpg);" alt="a picture of a birthday party">
         <div class="landing_page">
             <div class="container-fluid nav">
             <img src="girl.jpg" height={"150"} alt="a picture of an Akan girl"> 
@@ -25,15 +25,18 @@
             </ul>
             <form>
                 Gender<br>
-                <input type="radio" id="male" name="gender" value="male">
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br>
-                <form>
+                <label for="male">male:</label>
+                <input type="checkbox" id="male" class="">
+                <label for="female">female</label>
+                <input type="checkbox" id="female" class=""><br>
                     <label for="birthday">Birthday:</label>
                     <input type="date" id="birthday" name="birthday">
                   </form>
-                  <input type="submit" value="Submit">
+                  <button type="button" onclick=" getAkan()" class="btn btn-large btn-block btn-outline-primary">Get Name</button>
+                  <footer id="footer">
+                    <br>
+                        <p> © @mbagaya.com</p>
+                    </footer>
                 </form>
             </div>
             <script src="js/scripts.js"></script>
